@@ -21,6 +21,8 @@
                 </ul>
             </div>
         @endif
+        <x-alert type="danger" :session="session('login_error')"/>
+        <x-alert type="danger" :session="session('logout')"/>
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address"  autofocus>
