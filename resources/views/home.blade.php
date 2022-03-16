@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <x-alert type="success" :session="session('login_success')"/>
+        <x-alert type="danger" :session="session('danger')"/>
+        <x-alert type="success" :session="session('success')"/>
         <h3>プロフィール</h3>
         <ul>
             <li>名前：{{ Auth::user()->name }}</li>
